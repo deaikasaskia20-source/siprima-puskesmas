@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "./", // 🔥 Tambahkan baris ini untuk memastikan path relatif saat build di Vercel
+
   server: {
     host: "::",
     port: 8080,
